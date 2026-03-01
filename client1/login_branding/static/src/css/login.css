@@ -1,0 +1,133 @@
+/* ===== AUTH WRAPPER ===== */
+.auth-wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 40px 0;
+}
+
+/* ===== CONTAINER ===== */
+.auth-container {
+    max-width: 1100px;
+}
+
+/* ===== CARD ===== */
+.auth-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== GRID ===== */
+.auth-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+/* ===== LEFT SIDE ===== */
+.auth-side {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-brand {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth-logo-dot {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+}
+
+.auth-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.auth-subtitle {
+    opacity: 0.85;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ===== RIGHT SIDE (FORM) ===== */
+.auth-form {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ===== INPUTS ===== */
+.auth-form .form-control {
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+
+.auth-form .form-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ===== BUTTON ===== */
+.auth-form .btn-primary {
+    height: 50px;
+    border-radius: 12px;
+    font-weight: 600;
+    background: #2563eb;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.auth-form .btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+/* ===== LINKS ===== */
+.auth-form a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.auth-form a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .auth-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-side {
+        display: none;
+    }
+
+    .auth-form {
+        padding: 40px;
+    }
+}
